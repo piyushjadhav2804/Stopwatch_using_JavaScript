@@ -1,6 +1,7 @@
 /* Stopwatch project by PIYUSH JADHAV */
 body {
     margin: 0;
+    overflow: hidden;
 }
 
 .container {
@@ -41,11 +42,14 @@ body {
     width: 70%;
     border: 2px solid #D1D1D1;  
     background-color: #CCE5B6;
+    overflow: hidden;
 }
 
 #time {
     font-size: 3rem;
     color: #333333;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .buttons {
@@ -82,4 +86,35 @@ body {
     background-color: #228B22;
     font-weight: bold;
     color: #ffffff;
+}
+
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  .container {
+    /* Mobile styles */
+    margin: 10px;
+  }
+
+  .watch-container {
+    /* Mobile styles */
+    width: 90vw;
+    margin: 20px;
+  }
+
+  .timer {
+    /* Mobile styles */
+    font-size: 2rem;
+  }
+
+  .buttons {
+    /* Mobile styles */
+    flex-direction: column;
+  }
+
+  .button-size {
+    /* Mobile styles */
+    width: 100px;
+    margin: 10px;
+  }
 }
