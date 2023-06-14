@@ -1,0 +1,85 @@
+/* Stopwatch project by PIYUSH JADHAV */
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E6F2D6;
+}
+
+#title {
+    font-size: 2rem;
+    font-style: normal;
+    margin-top: 50px;
+    color: #333333;
+}
+
+.watch-container {
+    height: 30vh;
+    width: 40vw;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid #B1D581;
+    border-radius: 20px;
+    background-color: #F4FAD7;
+    
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    width: 70%;
+    border: 2px solid #D1D1D1;  
+    background-color: #CCE5B6;
+}
+
+#time {
+    font-size: 3rem;
+    color: #333333;
+}
+
+.buttons {
+    height: 10%;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-size {
+    border: 2px solid #FF7F7F;
+    border-radius: 20px;
+    width: 80px;
+    height: 40px;
+    margin-top: -10px;
+    background: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#start {
+    background-color: #00BFFF;
+    font-weight: bold;
+    color: #00008B;
+}
+
+#stop {
+    background-color: #DC143C;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#reset {
+    background-color: #228B22;
+    font-weight: bold;
+    color: #ffffff;
+}
